@@ -1,0 +1,40 @@
+##Measures##
+
+Avg Return Cost = AVERAGE(Returns[Cost])
+
+Avg Delay Days = AVERAGE(Shipments[Delay_Days])
+
+Avg Fright Cost = AVERAGE(Shipments[Freight_Cost])
+
+Avg Reliability Rating = AVERAGE(Suppliers[Reliability_Rating])
+
+Avg Risk Score = AVERAGE(Suppliers[Risk_Score])
+
+Delayed Shipments = COUNTROWS(FILTER(Shipments, Shipments[Status] = "Delayed"))
+
+Delayed Shipment % = [Delayed Shipments]/COUNTROWS(Shipments)
+
+Delayed_Shipment_6_months = CALCULATE([Delayed Shipments], DATESINPERIOD(Shipments[Shipment_Date], MAX(Shipments[Shipment_Date]), -6, MONTH))
+
+HighRiskSupplierCount = CALCULATE(COUNTROWS (Suppliers), Suppliers[reliability_rating] < 3, Suppliers[risk_score] > 80)
+
+On Time Shipments = COUNTROWS(FILTER(Shipments, Shipments[Status] = "On Time"))
+
+On Time Shipment % = [On Time Shipments]/COUNTROWS(Shipments)
+
+Total Freight Cost = SUM(Shipments[Freight_Cost])
+
+Total Shipments = COUNTROWS(Shipments)
+
+Total No. of Suppliers = COUNTROWS(Suppliers)
+
+
+
+
+##Columns##
+
+Shipment_Date = RELATED(Orders[Order_Date]) + Shipments[Delay_Days]
+
+Stock Status = IF(Warehouses[Stock_Level] < Warehouses[Min_Threshold], "Understocked", "Healthy")
+
+
