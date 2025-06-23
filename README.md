@@ -1,9 +1,13 @@
 **🚚 GlobalLogiX – Power BI Supply Chain Risk Management Dashboard**
 
 **Candidate: Rohit Prakash
+
 Tool Used: Microsoft Power BI
+
 Role: Data Analyst | Dashboard Developer
+
 Project Type: Skill Test & Capstone Project
+
 Client Simulation: GlobalLogiX (Multinational Logistics Firm)**
 
 🧭 Overview
