@@ -1,9 +1,10 @@
-🚚 GlobalLogiX – Power BI Supply Chain Risk Management Dashboard
-Candidate: Rohit Prakash
+**🚚 GlobalLogiX – Power BI Supply Chain Risk Management Dashboard**
+
+**Candidate: Rohit Prakash
 Tool Used: Microsoft Power BI
 Role: Data Analyst | Dashboard Developer
 Project Type: Skill Test & Capstone Project
-Client Simulation: GlobalLogiX (Multinational Logistics Firm)
+Client Simulation: GlobalLogiX (Multinational Logistics Firm)**
 
 🧭 Overview
 This Power BI project was developed as part of a skill evaluation for GlobalLogiX, a logistics and supply chain company seeking improved operational insights. The dashboard provides end-to-end visibility into supplier performance, inventory health, shipment delays, and return diagnostics. It leverages DAX, Power Query, and drill-through reports to drive real-time decision-making.
